@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/Template.css">
+
+    <!--=============== FAVICON ===============-->   
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>CAD basics</title>
+  </head>
+  
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-grid nav__container" id="2header">
+          <div class="nav__logo">
+            <a href="index.html">Jakub</a>
+          </div>            
+            <a href="https://www.linkedin.com/in/jakub-wołosz-10b8a422a/" class="home__social-icon"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="index.html#contact" id="email-link" class="home__social-icon"><i class="ri-mail-fill"></i></a>
+            <a href="https://github.com/Proeliorr" class="home__social-icon"><i class="ri-github-fill"></i></a>
+          <a href="assets/Files/CV_EN.pdf" class="button">Download CV</a>
+        </nav>
+    </header>
+
+    <!--===== CAD basics =====-->
+    <section class="about section " id="about">
+        <h2 class="section-title">CAD basics </h2>
+
+        <div>
+          <h2 class="about__text2">
+              <br>
+              <br>
+              <br>
+              <center>
+              During my academic studies, I enrolled in courses to gain familiarity with the fundamentals of Autodesk software, particularly AutoCAD. To further enhance my understanding, I did some additional supplementary courses through the Udemy platform.
+              </center>
+          </h2> 
+          <br>
+          <br>
+          
+        </div>
+
+        <div class="about__container bd-grid">
+            <div class="about__img2">
+                <a href="assets/Files/RevitBeginnerProject.pdf" target="_blank"> <img src="assets/img/CAD_Revit.png" alt="" id="smaller-image"></a>
+            </div>
+            
+            <div>
+
+                <p class="about__text3">
+                
+                    Model of a simple block of flats - the effect of the <i> Autodesk Revit course</i> <br> realized on Udemy platform.
+
+                </p>           
+            </div>          
+            
+           
+        </div>
+ 
+        <div>
+              <div>
+                <h2 class="about__text2">
+                    <br>
+                    <br>
+                    <br>
+                    <center>
+                    	These experiences equipped me with the skills to prepare technical drawings, create simple BIM models, and integrate results from one software component into another (such as generating a Revit model based on an AutoCAD drawing). 
+                       <br> I also gained proficiency in utilizing paper and model-based layouts, managing layers, generating reports, and more. 
+                      A sample of my work is provided in the gallery below. 
+
+                    </center>
+                </h2> 
+                <br>
+                <br>
+                
+              </div>
+              
+
+          <br>
+          <br>
+          
+        </div>
+    </section>
+
+    <h2 class="section-title">Gallery </h2>
+
+    <section class="about section " id="lightbox">
+
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+          <div class="column">
+            <img src="assets/img/1_Mileage-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="assets/img/2_L_Profile-1.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="assets/img/3_Normal_Section_StraightLine-1.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="assets/img/CAD.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="assets/img/1_Mileage-1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="assets/img/2_L_Profile-1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="assets/img/3_Normal_Section_StraightLine-1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="assets/img/CAD.png" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+              <img class="demo" src="assets/img/1_Mileage-1.png" onclick="currentSlide(1)" alt="Mileage of Forest Road">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="assets/img/2_L_Profile-1.png" onclick="currentSlide(2)" alt="Longitudinal Profile of Forest Road">
+            </div>
+            <div class="column">
+              <img class="demo" src="assets/img/3_Normal_Section_StraightLine-1.png" onclick="currentSlide(3)" alt="Normal cross-section on a straight line">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="assets/img/CAD.png" onclick="currentSlide(4)" alt="Drawing of the market - example from AutoCAD course">
+            </div>
+          </div>
+        </div>
+
+
+    </section>
+      
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <!-- <p class="footer__title">Jakub</p> -->
+      <center><img src="assets/img/signature.png" width="150" class="footer__icon" alt=""></center>
+        <p class="footer__copy">&#169; Created by Jakub Wołosz, inspired by Bedimcode</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

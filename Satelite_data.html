@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/Template.css">
+
+        <!--=============== FAVICON ===============-->   
+        <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+
+       <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+        <title>Satellite Data Visualization</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid nav__container">
+              <div class="nav__logo">
+                <a href="index.html">Jakub</a>
+              </div>            
+                <a href="https://www.linkedin.com/in/jakub-wołosz-10b8a422a/" class="home__social-icon"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="index.html#contact" id="email-link" class="home__social-icon"><i class="ri-mail-fill"></i></a>
+                <a href="https://github.com/Proeliorr" class="home__social-icon"><i class="ri-github-fill"></i></a>
+              <a href="assets/Files/CV_EN.pdf" class="button">Download CV</a>
+            </nav>
+          </header>
+
+
+<!--===== ABOUT =====-->
+<section class="about section " id="about">
+    <h2 class="section-title">Project/type of work</h2>
+
+    <div>
+        <h2 class="about__text2">
+            <br>
+            <br>
+            <br>
+            <center>
+            One of the most powerful uses of satellite imagery is the possibility of calculating several spectral indices. Scientific literature mentions tens, even hundreds, of them for various purposes. <br> One of such is the application of satellite imagery for predicting, observing, and assessing possible or actual casualties.
+             These applications can be accurately used, <br> e.g. in the forestry sector, which, depending on the scale, occupies whole districts, countries, continents and more.
+            The phenomena shown in the pictures below were the object of my summer self-learning.<br> I wanted to grasp the force of nature while simultaneously showing hidden beauty seen from above.
+            </center>
+        </h2> 
+        <br>
+        <br>
+        
+    </div> 
+
+    <center>
+    <div class="about__container bd-grid2">
+        <div class="about__img2">
+            <a href="assets/img/Forestdire_canada.png" target="_blank"> <img src="assets/img/Forestdire_canada.png" alt="" id="smaller-image"></a>
+            <center> <p>Copernicus Sentinel2-L2A - 23 August 2023</p>  </center>
+        </div>
+        
+
+        
+        <div>
+
+            <h3 class="about__text3">
+            
+                The left picture depicts a massive forest fire in the Northern Territories (Canada). 
+                This image was generated using a <b><a href="https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/markuse_fire/" target="_blank" "color: green;">JS script</a></b></href>, enabling the calculation <br> of spectral indices and online mosaic creation via EO Browser. <br><br>
+                The mosaic comprises three spectral bands/indices (NIR, SWIR and one of the vegetation indices). This combination creates a stark contrast in colors, facilitating the rapid differentiation between burned areas (appearing red) and areas unaffected by fire (appearing green in the case of vegetation).
+          </a>
+            </h3>           
+        </div>
+        <div>
+            <br>
+            <br>
+            <br>
+        </div>  
+        
+        <div>
+            <p class="about__text">
+                <!-- ## Lorem ipsum -->
+            </p> 
+
+
+        </div>  
+        
+        <div class="about__img2">
+            <a href="assets/img/Satellite1.jpg" target="_blank"><img src="assets/img/Satellite1.jpg" alt=""></a>
+            <center><a> <p>Copernicus Sentinel2-L2A - 10 September 2023.</p>  </a></center>
+        </div>  
+
+        <div class="about__text3">
+            <a> <h3>A gigantic <b><a href="https://balkaninsight.com/2023/09/08/floods-devastate-central-greece-taking-lives/" target="_blank" "color: green;">flooded area</a></b></href>  resulting from heavy rains, near the Trinkala city, Greece.
+                 The phenomenon is shown on a modified false-color mosaic, where vegetation appears in the shades of red. 
+                 The flood damaged mainly croplands, which can be observed as reddish rectangles under the blue layer of  water. <br>
+                  </h3>
+        </div>
+    </div>
+    </center>
+</section>
+
+ <!--===== FOOTER =====-->
+ <footer class="footer">
+    <!-- <p class="footer__title">Jakub</p> -->
+   <center><img src="assets/img/signature.png" width="150" class="footer__icon" alt=""></center>
+    <p class="footer__copy">&#169; Created by Jakub Wołosz, inspired by Bedimcode</p>
+</footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
