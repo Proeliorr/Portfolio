@@ -91,7 +91,10 @@ function openModal() {
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
   document.getElementsByClassName("l-header")[0].style.display = ""; // show the header
-  document.getElementById("2header")[0].style.display = "flex"; // show the 2ndheader
+  var secondHeader = document.getElementById("2header");
+  if (secondHeader) {
+    secondHeader.style.display = "flex"; // show the 2ndheader
+  }
 }
 
 var slideIndex = 1;

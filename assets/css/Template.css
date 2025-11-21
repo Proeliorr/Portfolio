@@ -122,7 +122,6 @@ img {
 }
 
 .l-header {
-  display: fixed;
   width: 100%;
   position: fixed;
   top: 0;
@@ -177,8 +176,8 @@ img {
   background-color: var(--first-color);
 }
 .nav__logo {
-  color: var(--second-color);
-  
+  color: var(--first-color);
+  font-weight: var(--font-semi);
 }
 .nav__toggle {
   color: var(--second-color);
@@ -282,8 +281,8 @@ img {
 }
 .about__text2 {
   margin-left: 8rem;
-  margin-right: 8rem
-  
+  margin-right: 8rem;
+
 }
 .about__text3 {
   margin-left: 1rem;
@@ -529,6 +528,60 @@ img.hover-shadow {
   .home__img {
     width: 200px;
   }
+
+  /* Reduce excessive margins on very small screens */
+  .about__text2 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .about__text3 {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* Responsive margins for mobile */
+  .about__text2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .about__text3 {
+    width: auto;
+    max-width: 100%;
+  }
+
+  /* Make images responsive */
+  .about__img img {
+    width: 100%;
+    max-width: 720px;
+  }
+
+  .about__img2 {
+    width: 100%;
+    max-width: 720px;
+  }
+
+  /* Responsive iframe */
+  .iframe__container iframe {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Fix modal for mobile */
+  .modal-content {
+    width: 95%;
+  }
+
+  .close {
+    top: 60px;
+    right: 25px;
+  }
+
+  /* Better column layout for mobile */
+  .column {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 576px) {
   .home {
@@ -618,7 +671,8 @@ img.hover-shadow {
     padding-top: 2rem;
   }
   .about__img img {
-    width: 1080px;
+    width: 100%;
+    max-width: 1080px;
     padding-right: 10%;
     overflow: auto; /* adds scrollbars to the box if the content overflows */
   }
